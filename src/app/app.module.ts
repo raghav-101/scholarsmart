@@ -1,18 +1,40 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import {AngularFireModule} from '@angular/fire/compat';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { HomeComponent } from './home/home.component';
+import { FirebaseService } from './services/firebase.service';
+import {AngularFirestoreModule} from '@angular/fire/compat/firestore';
+import { ProductPageComponent } from './product-page/product-page.component'
+import {HttpClientModule} from '@angular/common/http';
+import { MycartComponent } from './mycart/mycart.component';
+import { LoginSignupComponent } from './login-signup/login-signup.component';
+import { HeaderComponent } from './header/header.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    ProductPageComponent,
+    MycartComponent,
+    LoginSignupComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp({
+      apiKey: "AIzaSyAupGpwto-DAM6xp5hq1HdHpA8opQgcuVQ",
+      authDomain: "scholarsmart-37766.firebaseapp.com",
+      projectId: "scholarsmart-37766",
+      storageBucket: "scholarsmart-37766.appspot.com",
+      messagingSenderId: "550524140253",
+      appId: "1:550524140253:web:13629867b5fbd7b0f23934"
+    }),
+    AngularFirestoreModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [FirebaseService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

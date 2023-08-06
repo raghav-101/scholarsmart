@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
-import { FirebaseService } from './services/firebase.service';
+import { FirebaseService } from '../services/firebase.service';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-login-signup',
+  templateUrl: './login-signup.component.html',
+  styleUrls: ['./login-signup.component.css']
 })
-export class AppComponent {
+export class LoginSignupComponent {
   title = 'scholarsMart';
   session: any;
-  isSignedIn = false
+  public isSignedIn = false
   email = ""
   constructor(public firebaseService: FirebaseService){}
   message = ""
