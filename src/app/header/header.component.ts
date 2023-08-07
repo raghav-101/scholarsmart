@@ -1,6 +1,7 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { CartService } from '../services/service/cart.service';
 import { FirebaseService } from '../services/firebase.service';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-header',
@@ -11,14 +12,23 @@ export class HeaderComponent {
   @Output() isLogout = new EventEmitter<void>()
   public totalItem : number = 0;
   public searchTerm !: string;
-  constructor(private cartService : CartService, private firebaseservice: FirebaseService) { }
+  public totalPoints: number = 0
+  constructor(private cartService : CartService, private firebaseservice: FirebaseService, private api:ApiService) { }
 
   ngOnInit(): void {
     this.cartService.getProducts()
-    .subscribe(res=>{
+    .subscribe((res:any)=>{
       this.totalItem = res.length;
+
     })
-  }
+  
+  // this.api.getPoints(email){
+    
+  // }
+
+}
+    
+  
   logout(){
     this.firebaseservice.logout()
 

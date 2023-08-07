@@ -1,0 +1,41 @@
+<body>
+<div class="checkout">
+  <h1>Checkout</h1>
+  <div class="row">
+    <div class="col-sm-7">
+      <h3>Add shipping address</h3>
+      <form #orderData="ngForm" class="common-form">
+        <input
+          #email
+          type="text"
+          class="form-input"
+          name="email"
+          placeholder="Enter User Email"
+          [(ngModel)]="email_address"
+        />
+        <input
+          #address
+          type="text"
+          class="form-input"
+          name="address"
+          placeholder="Enter User Address"
+          [(ngModel)]="user_address"
+        />
+        <input
+          #contact
+          type="text"
+          class="form-input"
+          name="contact"
+          placeholder="Enter contact details"
+          [(ngModel)]="contact_details"
+        />
+        <button class="btn form-button"(click)="updateUserPoints(email)"  (click)="addOrder()" routerLink="/thank-you">Order Now</button>
+      </form>
+    </div>
+    <div class="col-sm-5">
+        <h3>Total Amount: {{grandTotal}}</h3>
+        <h4>Payment Method : <b>Scholar Points</b></h4>
+    </div>
+  </div>
+</div>
+</body>

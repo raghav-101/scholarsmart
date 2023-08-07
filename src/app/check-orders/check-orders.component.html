@@ -1,0 +1,23 @@
+
+<input #email placeholder="please input your email">
+<button (click)="showOrders(email)">Display Orders</button>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Email Address</th>
+        <th scope="col">User Address</th>
+        <th scope="col">Grand Total</th>
+        <th scope="col">Order Info</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let order of orders">
+        <td>{{order.id}}</td>
+        <td>{{order.email_address}}</td>
+        <td>{{order.contact_details}}</td>
+        <td>{{order.grandTotal}}</td>
+        <td>{{order.order_info}}</td>
+      </tr>
+    </tbody>
+  </table>

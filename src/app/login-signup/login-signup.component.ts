@@ -11,6 +11,7 @@ export class LoginSignupComponent {
   session: any;
   public isSignedIn = false
   email = ""
+  public points_email = '';
   constructor(public firebaseService: FirebaseService){}
   message = ""
   ngOnInit(){

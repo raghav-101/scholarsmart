@@ -16,12 +16,17 @@ export class ProductPageComponent {
   ngOnInit(): void{
     this.api.getProducts()
     .subscribe(res=>{
-      this.productList = res;
+      this.productList = res.map((e:any)=>{
+        const api = e.payload.doc.data();
+        api.id = e.payload.doc.id;
+        return api;
+      })
       this.productList.forEach((a:any)=>{
-        Object.assign(a, {quantity:1, total:a.price})
+        Object.assign(a, {quantity:1, total:Number(a.price)})
       })
     })
   }
+
   logout(){
     this.firebaseservice.logout()
 

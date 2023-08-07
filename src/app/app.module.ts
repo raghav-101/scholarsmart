@@ -11,6 +11,11 @@ import {HttpClientModule} from '@angular/common/http';
 import { MycartComponent } from './mycart/mycart.component';
 import { LoginSignupComponent } from './login-signup/login-signup.component';
 import { HeaderComponent } from './header/header.component';
+import { CheckoutComponent } from './checkout/checkout.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ThankYouComponent } from './thank-you/thank-you.component';
+import { CheckOrdersComponent } from './check-orders/check-orders.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,6 +24,9 @@ import { HeaderComponent } from './header/header.component';
     MycartComponent,
     LoginSignupComponent,
     HeaderComponent,
+    CheckoutComponent,
+    ThankYouComponent,
+    CheckOrdersComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,7 +40,9 @@ import { HeaderComponent } from './header/header.component';
       appId: "1:550524140253:web:13629867b5fbd7b0f23934"
     }),
     AngularFirestoreModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [FirebaseService],
   bootstrap: [AppComponent]

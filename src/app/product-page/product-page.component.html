@@ -8,7 +8,7 @@
             <img src="{{item.image}}">
             <h5 style="white-space: nowrap;overflow:hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.title}}</h5>
             <p style="white-space: nowrap;overflow:hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.description}}</p>
-            <p><strong>Price</strong>${{item.price}}</p>
+            <p><strong>Price</strong> {{item.price}} Scholar Points</p>
             <button class="btn btn-primary" (click)="addToCart(item)">Add to Cart</button>
         </div>
     </ng-container>
