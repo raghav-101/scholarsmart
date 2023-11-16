@@ -27,7 +27,7 @@ export class FirebaseService {
     })
     this.userObj.email =  email
     this.userObj.id = '';
-    this.userObj.scholar_points = 999999;
+    this.userObj.scholar_points = 0;
     this.addUser(this.userObj)
   }
   addUser(user: User){
