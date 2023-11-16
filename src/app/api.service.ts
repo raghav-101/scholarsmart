@@ -59,18 +59,13 @@ export class ApiService {
     this.email = this.user.email;
     this.id = this.user.id;
     this.updatedPoints = this.user.scholar_points - pointsToBeDeducted
-    if (this.updatedPoints < 0){
-       return false;
-    }
-    else{
     this.userObj.email = this.email
     this.userObj.scholar_points = this.updatedPoints
     this.userObj.id = '';
     this.deleteUser(this.id);
     this.addUser(this.userObj)
     return this.user
-    }
-    
+
     
   })
   
