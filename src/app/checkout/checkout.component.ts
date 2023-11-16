@@ -53,6 +53,7 @@ export class CheckoutComponent {
   }
   updateUserPoints(email: any){ 
     this.firestoreservice.updateScholarPoints(this.grandTotal, email.value);
+    this.cartService.removeAllCart();
   }
   clearFields(){
     this.id = '';

@@ -1,3 +1,144 @@
-header{
-    background-color:#1f2029;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #1f2029;
+
+}
+
+.container{
+    width: 100%;
+    /* min-height: 100vh; */
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.logo{
+    width: 50px;
+    cursor: pointer;
+    margin: 30px 0;
+    mix-blend-mode: darken;
+}
+
+.menu{
+    width: 25px;
+    cursor: pointer;
+
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 14px;
+}
+
+nav ul li a:hover{
+    color: rgb(0, 174, 255);
+}
+
+.row{
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.col-1{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+
+.col-1 h2{
+    font-size: 54px;
+    color: #ffeba7;
+}
+
+.col-1 h3{
+    font-size: 30px;
+    color: #fff4cfe1;
+    font-weight: 100;
+    margin: 20px 0 10px;
+}
+
+.col-1 p{
+    font-size: 16px;
+    color: #b7b7b7;
+    font-weight: 100;
+}
+
+col-1 p{
+    margin: 30px 0;
+    font-size: 20px;
+}
+
+button{
+    width: 140px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: #000000;
+    background: #ffeba7;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: width 0.5s;
+}
+
+button img{
+    width: 30px;
+    display: none;
+}
+
+button:hover img{
+    display: block;
+}
+
+button:hover{
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffeba7;
+}
+
+.col-1::after{
+    content: '';
+    width: 10px;
+    height: 57%;
+    background: #ffeba7;
+    position: absolute;
+    left: -40px;
+    top: 8px;
+
+}
+
+.col-2{
+    position: relative;
+    flex-basis: 20%;
+    display: flex;
+    align-items: center;
+}
+.logout{
+    padding-left: 50px;
 }

@@ -56,7 +56,7 @@
 												<input type="password" #passwordSignup class="form-style" placeholder="Password">
 												<i class="input-icon uil uil-lock-alt"></i>
 											</div>
-											<a (click)="signUp(emailSignup.value, passwordSignup.value); nameDisplay(fullName.value)" routerLink="products"class="btn mt-4">Register</a>
+											<a (click)="signUp(emailSignup.value, passwordSignup.value);" routerLink="products"class="btn mt-4">Register</a>
 				      					</div>
 			      					</div>
 			      				</div>
@@ -71,7 +71,8 @@
 </body>
 </html>
 
-<app-header *ngIf="isSignedIn" (isLogout)="handleLogout()"></app-header>
+<app-header *ngIf="isSignedIn" (isLogout)="handleLogout()" [data]="email"></app-header>
+
 
 <router-outlet></router-outlet>
 

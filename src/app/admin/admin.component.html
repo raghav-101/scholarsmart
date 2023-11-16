@@ -1,0 +1,14 @@
+
+<body>
+  <div class="container">
+    <div class="row">
+<form [formGroup]="form" action="javascript:void(0)">
+    <label for="fname" class="label">Enter User Email</label><br>
+    <input type="text" #email id="fname" name="fname" class="input" formControlName="email"><br>
+    <label for="lname" class="label">Enter number of scholar points</label><br>
+    <input type="text" #scholarpoints id="lname" name="lname"  class="input" formControlName="scholarpoints"><br>
+    <button type="submit" (click)="updateUserPoints(email.value, scholarpoints.value )">Submit</button>
+  </form>
+</div>
+ </div>
+</body>

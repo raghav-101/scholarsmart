@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { CartService } from '../services/service/cart.service';
 import { FirebaseService } from '../services/firebase.service';
 import { ApiService } from '../api.service';
@@ -10,6 +10,7 @@ import { ApiService } from '../api.service';
 })
 export class HeaderComponent {
   @Output() isLogout = new EventEmitter<void>()
+  @Input() data:string | undefined
   public totalItem : number = 0;
   public searchTerm !: string;
   public totalPoints: number = 0
@@ -20,18 +21,12 @@ export class HeaderComponent {
     .subscribe((res:any)=>{
       this.totalItem = res.length;
 
-    })
-  
-  // this.api.getPoints(email){
-    
-  // }
-
-}
-    
+    })}
   
   logout(){
     this.firebaseservice.logout()
 
     this.isLogout.emit()
   }
+ 
 }

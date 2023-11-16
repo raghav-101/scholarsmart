@@ -1,0 +1,62 @@
+[debug] [2023-08-07T15:21:22.133Z] ----------------------------------------------------------------------
+[debug] [2023-08-07T15:21:22.136Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ragha\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js projects:list
+[debug] [2023-08-07T15:21:22.136Z] CLI Version:   12.4.7
+[debug] [2023-08-07T15:21:22.136Z] Platform:      win32
+[debug] [2023-08-07T15:21:22.136Z] Node Version:  v18.13.0
+[debug] [2023-08-07T15:21:22.137Z] Time:          Mon Aug 07 2023 20:51:22 GMT+0530 (India Standard Time)
+[debug] [2023-08-07T15:21:22.137Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-08-07T15:21:22.197Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-07T15:21:22.197Z] > authorizing via signed-in user (raghav.kalenele@gmail.com)
+[debug] [2023-08-07T15:21:22.202Z] > refreshing access token with scopes: []
+[debug] [2023-08-07T15:21:22.204Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-08-07T15:21:22.205Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-08-07T15:21:22.493Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2023-08-07T15:21:22.494Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-08-07T15:21:22.494Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[debug] [2023-08-07T15:21:22.961Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 401
+[debug] [2023-08-07T15:21:22.962Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[debug] [2023-08-07T15:21:22.962Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2023-08-07T15:21:23.066Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at responseToError (C:\Users\ragha\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\ragha\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:285:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
+[debug] [2023-08-07T15:21:59.043Z] ----------------------------------------------------------------------
+[debug] [2023-08-07T15:21:59.045Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ragha\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --project scholarsmart-37766
+[debug] [2023-08-07T15:21:59.045Z] CLI Version:   12.4.7
+[debug] [2023-08-07T15:21:59.045Z] Platform:      win32
+[debug] [2023-08-07T15:21:59.045Z] Node Version:  v18.13.0
+[debug] [2023-08-07T15:21:59.046Z] Time:          Mon Aug 07 2023 20:51:59 GMT+0530 (India Standard Time)
+[debug] [2023-08-07T15:21:59.046Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-08-07T15:21:59.107Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-07T15:21:59.107Z] > authorizing via signed-in user (raghav.kalenele@gmail.com)
+[debug] [2023-08-07T15:21:59.108Z] [iam] checking project scholarsmart-37766 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-08-07T15:21:59.109Z] > refreshing access token with scopes: []
+[debug] [2023-08-07T15:21:59.111Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-08-07T15:21:59.111Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-08-07T15:21:59.374Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2023-08-07T15:21:59.374Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-08-07T15:21:59.374Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/scholarsmart-37766:testIamPermissions [none]
+[debug] [2023-08-07T15:21:59.374Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/scholarsmart-37766:testIamPermissions x-goog-quota-user=projects/scholarsmart-37766
+[debug] [2023-08-07T15:21:59.374Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/scholarsmart-37766:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-08-07T15:22:00.832Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/scholarsmart-37766:testIamPermissions 401
+[debug] [2023-08-07T15:22:00.832Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/scholarsmart-37766:testIamPermissions {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.cloudresourcemanager.v1.Projects.TestIamPermissions","service":"cloudresourcemanager.googleapis.com"}}]}}
+[debug] [2023-08-07T15:22:00.833Z] [iam] error while checking permissions, command may fail: FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2023-08-07T15:22:00.833Z] > refreshing access token with scopes: []
+[debug] [2023-08-07T15:22:00.833Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-08-07T15:22:00.833Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-08-07T15:22:01.078Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2023-08-07T15:22:01.078Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-08-07T15:22:01.078Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/scholarsmart-37766 [none]
+[debug] [2023-08-07T15:22:01.553Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/scholarsmart-37766 401
+[debug] [2023-08-07T15:22:01.553Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/scholarsmart-37766 {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2023-08-07T15:22:01.553Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2023-08-07T15:22:01.656Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at responseToError (C:\Users\ragha\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\ragha\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:285:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project scholarsmart-37766. Please make sure the project exists and your account has permission to access it.

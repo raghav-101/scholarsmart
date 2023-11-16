@@ -11,7 +11,19 @@
 .card{
     padding: 20px;
     margin: 30px;
+    background-color: #1f2029;
 }
+button{
+    width: 140px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: #000000;
+    background: #ffeba7;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: width 0.5s;
+  }
 body{
     background-color: #1f2029;
 

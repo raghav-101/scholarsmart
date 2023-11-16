@@ -1,40 +1,91 @@
-html,body{
-    margin: 0;
-    padding: 0;
-
+*{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #1f2029;
 }
 
-h1{
-    margin: 0;
+.container{
+  width: 100%;
+  min-height: 100vh; 
+  padding-left: 8%; 
+  padding-right: 8%; 
+  box-sizing: relative;
+  overflow: hidden;
+}
+.npsinr{
+  padding-top: 5%;
+  width: 90%;
+  display: inline;
 }
 
-.btn{  
-    border-radius: 4px;
-    height: 44px;
-    font-size: 13px;
-    font-weight: 600;
-    text-transform: uppercase;
-    -webkit-transition : all 200ms linear;
-    transition: all 200ms linear;
-    padding: 0 30px;
-    letter-spacing: 1px;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    align-items: center;
-    background-color: #ffeba7;
-    color: #000000;
-  }
-  .btn:hover{  
-    background-color: #123456;
-    color: #ffeba7;
-    box-shadow: 0 8px 24px 0 rgba(16,39,112,.2);
-  }
-body{
-	font-family: 'Poppins', sans-serif;
-	font-weight: 300;
-	line-height: 1.7;
-	color: #ffeba7;
-	background-color: #1f2029;
-    height: 100vh;
+.row{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 300px 0;
 }
+
+.col-1{
+  flex-basis: 40%;
+  position: relative;
+  margin-left: 50px;
+  display:inline-block;
+}
+
+.col-1 h2{
+  font-size: 54px;
+  color: #ffeba7;
+  white-space: nowrap; 
+}
+
+.col-1 h3{
+  font-size: 30px;
+  color: #fff4cfe1;
+  font-weight: 100;
+  margin: 20px 0 10px;
+  white-space: nowrap; 
+}
+
+.col-1 p{
+  font-size: 16px;
+  color: #b7b7b7;
+  font-weight: 100;}
+
+button{
+  width: 140px;
+  border: 0;
+  padding: 12px 10px;
+  outline: none;
+  color: #000000;
+  background: #ffeba7;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: width 0.5s;
+}
+
+button img{
+  width: 30px;
+  display: none;
+}
+
+button:hover img{
+  display: block;
+}
+
+button:hover{
+  width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to right, #4d4b46, #1f2029);
+}
+
+.col-1::after{
+  content: '';
+  width: 10px;
+  height: 57%;
+  background: #ffeba7;
+  position: absolute;
+  left: -40px;
+  top: 8px;
+}
+

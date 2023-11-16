@@ -1,5 +1,5 @@
-<header>
-    <div class="navbar navbar-dark shadow-sm">
+
+    <!-- <div class="navbar navbar-dark shadow-sm">
         
         <button routerLink="cart" class="btn btn-primary">
             <i style="font-size: 30px;" class="fas fa-cart-plus"></i>
@@ -9,7 +9,28 @@
             <i class="fa fa-sign-out" aria-hidden="true"></i>
         </button>
     </div>
-    <!-- <div>
-        {{totalPoints}}
+    <div>
     </div> -->
-</header>
+    
+
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <img src="https://static.vecteezy.com/system/resources/previews/014/391/893/non_2x/home-icon-isolated-on-transparent-background-black-symbol-for-your-design-free-png.png" class="logo" routerLink="home">
+                <nav>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </nav>
+                <a routerLink="cart">
+                <div style="font-size: 10px;" class="badge bg-danger"> {{totalItem}} </div>
+                <img src="https://static-00.iconduck.com/assets.00/shopping-cart-icon-512x462-yrde1eu0.png" class="menu">
+                </a>
+                <a (click)="logout()" class="logout">
+                    <!-- <i class="fa fa-sign-out" aria-hidden="true"></i> -->
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/006/184/737/small/logout-sign-out-icon-in-line-style-vector.jpg" class="menu">
+                </a>
+            </div>
+        </div>
+    </header>

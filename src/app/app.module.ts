@@ -15,6 +15,12 @@ import { CheckoutComponent } from './checkout/checkout.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ThankYouComponent } from './thank-you/thank-you.component';
 import { CheckOrdersComponent } from './check-orders/check-orders.component';
+import { FooterComponent } from './footer/footer.component';
+import { AdminComponent } from './admin/admin.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+
+
 
 @NgModule({
   declarations: [
@@ -27,6 +33,10 @@ import { CheckOrdersComponent } from './check-orders/check-orders.component';
     CheckoutComponent,
     ThankYouComponent,
     CheckOrdersComponent,
+    FooterComponent,
+    AdminComponent,
+    AboutUsComponent,
+    ContactUsComponent,
   ],
   imports: [
     BrowserModule,
