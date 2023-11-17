@@ -14,9 +14,13 @@
     box-sizing: border-box;
     overflow: hidden;
 }
-
+.home{
+    width: 60px;
+    cursor: pointer;
+    margin: 30px 0;
+}
 .navbar{
-    width: 100%;
+    width: 50%;
     display: flex;
     align-items: center;
 
@@ -26,13 +30,18 @@
     width: 50px;
     cursor: pointer;
     margin: 30px 0;
-    mix-blend-mode: darken;
+    /* mix-blend-mode: darken; */
+    /* text-align: right; */
+}
+.cart{
+    width: 60px;
+    cursor: pointer;
+    margin: 30px 0;
 }
 
 .menu{
     width: 25px;
     cursor: pointer;
-
 }
 
 nav{
@@ -59,7 +68,7 @@ nav ul li a:hover{
 
 .row{
     display: flex;
-    justify-content: space-between ;
+    justify-content: space-between;
     align-items: center;
     margin: 100px 0;
 }

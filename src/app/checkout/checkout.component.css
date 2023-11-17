@@ -18,9 +18,10 @@ input[type=text], select {
   }
 
   .btn{  
-    border-radius: 4px;
-    height: 44px;
-    font-size: 13px;
+    border-radius: 6px;
+    height: 60px;
+    width: 195px;
+    font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
     -webkit-transition : all 200ms linear;
@@ -39,3 +40,16 @@ input[type=text], select {
     color: #ffeba7;
     box-shadow: 0 8px 24px 0 rgba(16,39,112,.2);
   }
+.row{
+  padding-top: 50px;
+}
+.checkout{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-left: 500px;
+
+}
+.sameline{
+  display: inline-block;
+  padding-right: 5px;
+}

@@ -1,9 +1,11 @@
 <body>
 <div class="checkout">
-  <h1>Checkout</h1>
+  <h1 style="color: #ffeba7">Checkout</h1>
+  <h3 style="color: #ffeba7" class="sameline">Total Amount: </h3><h3 class="sameline">{{grandTotal}}</h3><br>
+  <h3 class="sameline" style="color: #ffeba7">Payment Method : </h3><h3 class="sameline">Scholar Points</h3>
   <div class="row">
     <div class="col-sm-7">
-      <h3>Add shipping address</h3>
+      <h3 style="color: #ffeba7">Add shipping address</h3>
       <form #orderData="ngForm" class="common-form">
         <input
           #email
@@ -28,13 +30,9 @@
           name="contact"
           placeholder="Enter contact details"
           [(ngModel)]="contact_details"
-        />
-        <button class="btn form-button" (click)="addOrder()" (click)="updateUserPoints(email)"  routerLink="/thank-you">Order Now</button>
+        /><br><br>
+        <button class="btn form-button" (click)="addOrder()" (click)="updateUserPoints(email)" routerLink="/thank-you">Order Now</button>
       </form>
-    </div>
-    <div class="col-sm-5">
-        <h3>Total Amount: {{grandTotal}}</h3>
-        <h4>Payment Method : <b>Scholar Points</b></h4>
     </div>
   </div>
 </div>

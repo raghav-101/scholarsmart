@@ -1,13 +1,33 @@
 
 <body>
   <div class="container">
+    <h2 style="color: #ffeba7; margin-top: 60px;">Scholar Mart Points</h2>
     <div class="row">
-<form [formGroup]="form" action="javascript:void(0)">
-    <label for="fname" class="label">Enter User Email</label><br>
+
+<form [formGroup]="form" action="javascript:void(0)" class="common-form">
+    <!-- <label for="fname" class="label">Enter User Email</label><br>
     <input type="text" #email id="fname" name="fname" class="input" formControlName="email"><br>
     <label for="lname" class="label">Enter number of scholar points</label><br>
     <input type="text" #scholarpoints id="lname" name="lname"  class="input" formControlName="scholarpoints"><br>
-    <button type="submit" (click)="updateUserPoints(email.value, scholarpoints.value )">Submit</button>
+  
+    <button type="submit" (click)="updateUserPoints(email.value, scholarpoints.value )">Submit</button> -->
+    <input
+    #email
+    type="text"
+    class="form-input"
+    name="email"
+    placeholder="Enter User Email"
+    formControlName="email"
+  />
+  <input
+    #scholarpoints
+    type="text"
+    class="form-input"
+    name="scholar_points"
+    placeholder="Enter Number of Scholar Points"
+    formControlName="scholarpoints"
+  />
+  <button type="submit" (click)="updateUserPoints(email.value, scholarpoints.value )">Submit</button>
   </form>
 </div>
  </div>

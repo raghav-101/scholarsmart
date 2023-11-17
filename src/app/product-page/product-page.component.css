@@ -12,6 +12,10 @@
     padding: 20px;
     margin: 30px;
     background-color: #1f2029;
+    border-style: solid;
+    border-width: thin;
+    border-color: #ffeba7;
+
 }
 button{
     width: 140px;
@@ -26,5 +30,4 @@ button{
   }
 body{
     background-color: #1f2029;
-
 }

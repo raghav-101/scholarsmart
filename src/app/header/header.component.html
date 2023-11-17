@@ -16,20 +16,22 @@
     <header>
         <div class="container">
             <div class="navbar">
-                <img src="https://static.vecteezy.com/system/resources/previews/014/391/893/non_2x/home-icon-isolated-on-transparent-background-black-symbol-for-your-design-free-png.png" class="logo" routerLink="home">
                 <nav>
                     <ul>
-                        <li><a routerLink="/about-us">About us</a></li>
-                    </ul>
-                </nav>
+                <li><img src="https://media.discordapp.net/attachments/850623313205657600/1175112665841012816/image.png?ex=656a0bf4&is=655796f4&hm=aba7bf1403153e2fbe8f5d9f43dc044d11332ae461f74ea8037e9f751c394e4b&=" class="home" routerLink="home"></li>
+                        <li><img src="https://media.discordapp.net/attachments/850623313205657600/1175113066615165059/image.png?ex=656a0c53&is=65579753&hm=e7a2f57da201e8a52f1bf16ad5aec91479d262fa63fcb977d47ff1b2386f4153&=" class="logo" routerLink="/about-us"></li>                 
+                    <li>
                 <a routerLink="cart">
+                    
                 <div style="font-size: 10px;" class="badge bg-danger"> {{totalItem}} </div>
-                <img src="https://static-00.iconduck.com/assets.00/shopping-cart-icon-512x462-yrde1eu0.png" class="menu">
+                <img src="https://media.discordapp.net/attachments/850623313205657600/1175113151872761978/image.png?ex=656a0c67&is=65579767&hm=3298c2cd3ffbc533258ddc86e8b6d32f11cecbf1f2eaae7c3c7fe0bf9a12255e&=" class="cart">
                 </a>
-                <a (click)="logout()" class="logout">
-                    <!-- <i class="fa fa-sign-out" aria-hidden="true"></i> -->
-                    <img src="https://static.vecteezy.com/system/resources/thumbnails/006/184/737/small/logout-sign-out-icon-in-line-style-vector.jpg" class="menu">
-                </a>
+            </li>
+            <li>
+                    <img src="https://media.discordapp.net/attachments/850623313205657600/1175113419641335899/image.png?ex=656a0ca7&is=655797a7&hm=4c0364d6e4a30e7520b7b75f0bfc1f8d6ff54abf546cbfa00121786b9a152a4d&=" class="logo" (click)="logout()">
+            </li>
+        </ul>
+            </nav>
             </div>
         </div>
     </header>
