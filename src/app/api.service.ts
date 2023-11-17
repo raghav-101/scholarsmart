@@ -54,19 +54,17 @@ export class ApiService {
   // return this.firestoreservice.collection("/users").add(this.userObj);
   this.getPoints(email)
   .subscribe(res=>{
-
     this.user = res.data()
     this.email = this.user.email;
     this.id = this.user.id;
     this.updatedPoints = this.user.scholar_points - pointsToBeDeducted
+    console.log(this.updatedPoints)
     this.userObj.email = this.email
     this.userObj.scholar_points = this.updatedPoints
     this.userObj.id = '';
     this.deleteUser(this.id);
     this.addUser(this.userObj)
     return this.user
-
-    
   })
   
 }

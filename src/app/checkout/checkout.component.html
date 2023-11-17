@@ -29,7 +29,7 @@
           placeholder="Enter contact details"
           [(ngModel)]="contact_details"
         />
-        <button class="btn form-button"(click)="updateUserPoints(email)"  (click)="addOrder()" routerLink="/thank-you">Order Now</button>
+        <button class="btn form-button" (click)="addOrder()" (click)="updateUserPoints(email)"  routerLink="/thank-you">Order Now</button>
       </form>
     </div>
     <div class="col-sm-5">
