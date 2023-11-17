@@ -9,6 +9,7 @@ import { CheckoutComponent } from './checkout/checkout.component';
 import { ThankYouComponent } from './thank-you/thank-you.component';
 import { CheckOrdersComponent } from './check-orders/check-orders.component';
 import { AdminComponent } from './admin/admin.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 const routes: Routes = [  
   {path: 'home', component: HomeComponent},
   {path: 'products', component: ProductPageComponent},
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path: 'thank-you', component: ThankYouComponent},
   {path: 'check-orders', component: CheckOrdersComponent},
   {path: 'scholarsmart', component: AdminComponent},
+  {path: 'about-us', component: AboutUsComponent},
 ];
 
 @NgModule({
